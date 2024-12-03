@@ -13,7 +13,7 @@ pipeline {
                     credentialsId: 'github'
             }
         }
-        stage('verify nodejs') {
+        stage('TINnode-devops') {
             steps {
                 sh 'node --version'
                 sh 'npm --version'
