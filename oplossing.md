@@ -3,6 +3,7 @@ opmaak met Markdown.
 
 
 a)
+
 ## 1. Aanmaken van credentials
 - Ga naar Manage Jenkins, Credentials, System, Global Credentials, Add Credentials;
 - Vervolgens klikken op SSH Usenrame with private key (kind), id heb ik 'github' genoemd, username 'alessiovep';
@@ -17,6 +18,7 @@ a)
 
 
 b)
+
 ## 1. Installeren van de plugin
 - Ga naar Manage Jenkins, Plugins, Available plugins en zoeken op NodeJS;
 - Vervolgens de plugin selecteren/aanvinken en rechts klikken op 'install'.
@@ -26,11 +28,17 @@ b)
 
 ![Tools Screenshot](Screenshot-tools.png)
 
-## 3. Test plugin in de Jenkensfile
+## 3. Plugin gebruiken dat we hebben ingesteld in de Jenkensfile
+- De NodeJS-versie wordt geladen
+
+![Plugin laden screenshot](Screenshot-plugin.png)
+
+## 4. Test plugin in de Jenkensfile
 - De pipeline in die zin aanpassen dat we de versie van JS en npm opvragen, hiermee testen we of het werkt.
 
   
 c)
+
 ## 1. Stage: install dependencies
 - installeert alle npm dependencies met 'npm install'.
 
