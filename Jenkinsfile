@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs 'TINnode-devops'
+    }
     stages {
         stage('opdracht 5') {
             steps {
@@ -13,7 +16,7 @@ pipeline {
                     credentialsId: 'github'
             }
         }
-        stage('TINnode-devops') {
+        stage('verify nodejs') {
             steps {
                 sh 'node --version'
                 sh 'npm --version'
